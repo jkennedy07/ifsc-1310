@@ -2,3 +2,18 @@ body {
     background-color:powderblue;
     font-family: Georgia, serif;
 }
+
+h1 {
+    width: 50%;
+    margin: auto;
+}
+
+p {
+    width: 50%;
+    margin: auto;
+}
+
+ul li {
+    width: 50%;
+    margin: auto;
+}
