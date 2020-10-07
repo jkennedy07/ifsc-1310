@@ -1,3 +1,58 @@
-body {
-    background-color:wheat;
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;    /* changes behavior of box model */
 }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ------- Global Styles ---------------*/
+/* colors:
+#66C9FF    (light blue)
+#2175A3    (medium blue)
+#48B4F0    (alternate blue)
+#A8865B    (tan)
+#F0A748    (cream orange)
+*/
+
+body {
+    background-color:#A8865B;
+    font-family: 'Fira Sans', sans-serif;
+    margin:0;
+}
+
+header.primary {
+    background-color:#4DA7F0;
+    text-align:center;
+    color:#ffffff;
+    text-shadow: 2px 2px #000;
+    
+    /* long tedious form */
+    padding-top:40px;
+    padding-bottom:20px;
+    
+    /* one-value shorthand */
+    padding: 100px;
+    
+    /* two-value shorthand */
+    padding: 20px 40px;             /* top/bottom _ left/right */
+    
+    /* four-value shorthand form */
+    padding: 40px 40px 20px 40px;   /* clockwise from top: t,r,b,l */
+}
+
+header.primary h1 {
+  font-size:3.2rem;
+  margin: 20px 0;
+}
+
+header.primary a{
+  text-decoration:none;
+  color:#ffffff;
+}
+
+
+
