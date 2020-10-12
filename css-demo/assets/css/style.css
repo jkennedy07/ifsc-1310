@@ -9,6 +9,14 @@ html {
   box-sizing: inherit;
 }
 
+/* ------- Utility Styles --------------*/
+
+.container {
+  width: 80vw;  /* vw = "viewport width" */
+  margin: 40px auto;
+  max-width:900px;
+}
+
 /* ------- Global Styles ---------------*/
 /* colors:
 #66C9FF    (light blue)
@@ -25,7 +33,7 @@ body {
 }
 
 header.primary {
-    background-color:#4DA7F0;
+    background-color:#2175A3;
     text-align:center;
     color:#ffffff;
     text-shadow: 2px 2px #000;
@@ -44,15 +52,83 @@ header.primary {
     padding: 40px 40px 20px 40px;   /* clockwise from top: t,r,b,l */
 }
 
-header.primary h1 {
+header.primary h1{
   font-size:3.2rem;
   margin: 20px 0;
 }
 
-header.primary a{
+header.primary h1 a{
   text-decoration:none;
   color:#ffffff;
 }
 
+header.primary h2{
+  font-size:2rem;
+  /* three-value shorthand  - top, l&r, bot*/
+  margin:20px auto 40px;
+}
+
+header.primary nav{
+  width:80vw;
+  margin:20px auto;
+  max-width:900px;
+}
+
+header.primary nav ul{
+  display: flex; /* treat as flexbox */
+  flex-direction: row; /* actually the default */
+  justify-content: space-around;
+  padding:0;  /* removes spacing associated with bullets */
+}
+
+header.primary nav ul li{
+  list-style-type: none;  /* removes bullets, but not spacing */
+  padding:10px;
+}
+
+header.primary nav ul li a{
+  color:#ffffff;
+  text-decoration:none;
+  background:#A8865B;
+  padding:8px 16px;
+  background:rgba(0,0,0,.4);
+  border-radius:7px;
+  transition:350ms;
+}
+
+header.primary nav ul li a:hover{
+  background:rgba(0,0,0,.7);
+}
+
+header.primary nav ul li a:active{
+  background:rgba(0,0,0,1);
+}
+
+/* these buttons break if we got to a narrow screen
+see the media query code at the end */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:680px) {
+  header.primary nav ul{
+    flex-direction: column; 
+    max-width:400px;
+    margin:0 auto;
+  }
+  
+  header.primary nav a{
+    display:block;
+  }
+}
