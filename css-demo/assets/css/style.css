@@ -17,6 +17,15 @@ html {
   max-width:900px;
 }
 
+
+/* ------- Responsive Images ---------------*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
 /* ------- Global Styles ---------------*/
 /* colors:
 #66C9FF    (light blue)
@@ -104,14 +113,54 @@ header.primary nav ul li a:active{
   background:rgba(0,0,0,1);
 }
 
+#intro {
+  border-bottom: 2px solid #c0c0c0;  /* width, stroke type, color */
+  padding-bottom: 1.25em;
+  line-height:30px;
+}
+
+#intro h2 {
+  color:#ffffff;
+}
+
 /* these buttons break if we got to a narrow screen
 see the media query code at the end */
 
+#content {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+}
 
+#content article.post {
+  width: 30%;    /* not viewport here, since we are not using the full screen */
+  box-shadow: 0 4px 8px rgba(0,0,0,.4);
+  padding: 10px;  /* could be done with ems to make more scalable */
+  transition: 350ms;  /* safest to put this on the base element, but may work on pseudoselector*/
+  border-radius: 10px;
+}
 
+#content article.post:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,.8);
+}
 
+#content .post figure {
+  margin: 0;
+}
 
+#content article time, #content article figcaption, #content article footer{
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color:#c0c0c0;
+}
 
+#content article img {
+  border-radius:5px;
+}
+
+.post a:link, .post a:visited{
+  color:navy;
+}
 
 
 
