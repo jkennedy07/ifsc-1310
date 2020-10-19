@@ -17,6 +17,25 @@ html {
   max-width:900px;
 }
 
+.img-right {
+  float:right;
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+  margin: 10px 0 10px 20px;
+}
+
+.img-left {
+  float:left;
+  padding: 5px;
+  border 1px solid #c0c0c0;
+  margin 10px 20px 10px 0;
+}
+
+.img-center {
+  margin: auto;
+  display: block;
+}
+
 
 /* ------- Responsive Images ---------------*/
 img {
@@ -30,8 +49,9 @@ img {
 /* colors:
 #66C9FF    (light blue)
 #2175A3    (medium blue)
-#48B4F0    (alternate blue)
+#48B4F0    (alternate light blue)
 #A8865B    (tan)
+#665237    (dark tan)
 #F0A748    (cream orange)
 */
 
@@ -120,7 +140,8 @@ header.primary nav ul li a:active{
 }
 
 #intro h2 {
-  color:#ffffff;
+  color:#000000;
+  font-size: 2rem;
 }
 
 /* these buttons break if we got to a narrow screen
@@ -130,6 +151,8 @@ see the media query code at the end */
   display: flex;
   flex-direction: row; 
   justify-content: space-between;
+  border-bottom: 2px solid #c0c0c0;  /* width, stroke type, color */
+  padding-bottom: 2.8em;
 }
 
 #content article.post {
@@ -159,12 +182,71 @@ see the media query code at the end */
 }
 
 .post a:link, .post a:visited{
-  color:navy;
+  color: #66C9FF;
 }
 
+#content h2 a:link, #content h2 a:visited {
+  color: #000000;
+  text-decoration: none;
+}
 
+/*
+This is the syntax to target a web ARIA role element:
+aside[role="complementary"] {
+}
+*/
 
+aside[role="complementary"] {
+  background-color: #665237;
+  color:#ffffff;
+  padding: 2.5rem;
+}
 
+aside .container {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+aside article.widget {
+  width: 40%;
+}
+
+aside a:link, aside a:visited {
+  color: #66C9FF;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+aside article footer {
+  display: none;
+}
+
+footer#colophon {
+  background-color: #2175A3;
+
+}
+
+#colophon h6 {  
+  padding: 20px;
+  margin: 0;
+  color: #000000;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+#additional-elements h2 {
+  border-bottom: 3px double #c0c0c0;
+  padding: 5px;
+}
+
+#additional-elements a:link, #additional-elements a:visited {
+  color: darkblue;
+}
+
+#additional-elements h3 {
+  
+}
 
 
 
