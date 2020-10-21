@@ -51,6 +51,7 @@ img {
 #2175A3    (medium blue)
 #48B4F0    (alternate light blue)
 #A8865B    (tan)
+#B38F60    (tan low contrast)
 #665237    (dark tan)
 #F0A748    (cream orange)
 */
@@ -222,6 +223,17 @@ aside article footer {
   display: none;
 }
 
+footer a {
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  background-color: rgba(0,0,0,.8);
+  color: #66C9FF;
+  transition: 500ms;
+}
+
 footer#colophon {
   background-color: #2175A3;
 
@@ -248,7 +260,79 @@ footer#colophon {
   
 }
 
+table {
+  width: 100%;
+  border: 1px solid #c0c0c0;
+  border-collapse: collapse;
+}
 
+table caption {
+  color: #ffffff;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: #665237;
+}
+
+table tr {
+  
+}
+
+table tr:nth-child(even) {
+  background-color: #B38F60;
+  background: rgba(0,0,0,.15)
+  /* alternate color or transparency overlay to darken while 
+  keeping the same hue */
+}
+
+table td {
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+table th {
+  background-color: #2175A3;
+  width: 33%;
+}
+
+#additional-elements ol {
+  list-style-type: upper-roman;
+}
+
+#additional-elements ul ul {
+  /* targets sublist */
+  list-style-type: square;
+}
+
+#additional-elements dt {
+  font-weight:bold;
+  font-size: 1.1rem;
+}
+
+#additional-elements dd {
+  margin: 0px;
+}
+
+dd + dt {
+  margin-top: 1.4rem;
+}
+
+#additional-elements blockquote {
+  background: rgba(0,0,0,.15);
+  padding: 40px 60px;
+  border: 5px double rgba(0,0,0,.5);
+  border-radius: 16px;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+#additional-elements cite {
+  display: block;
+  font-size:.8rem;
+  text-align: right;
+  margin-top: 1.5rem;
+  font-style: normal;
+}
 
 
 
