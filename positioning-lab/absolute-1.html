@@ -30,42 +30,37 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 }
-#red {
-	background-color: #900;
+/* "descendant selector" */
+#wrapper > div {
 	height: 150px;
 	width: 150px;
+}
+#red {
+	background-color: #900;
 	position: absolute;
 	top:0;
 	left:0;
 }
 #green {
 	background-color: #090;
-	height: 150px;
-	width: 150px;
 	position: absolute;
 	top: 0;
 	right: 0;
 }
 #blue {
 	background-color: #00F;
-	height: 150px;
-	width: 150px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 }
 #purple {
 	background-color: #63C;
-	height: 150px;
-	width: 150px;
 	position: absolute;
 	bottom: 0;
 	right: 0;
 }
 #footer {
 	background-color: #666;
-	height: 150px;
-	width: 150px;
 	position: relative;
 	margin: 20px auto;
 }
@@ -80,10 +75,10 @@ h1 {
 <body>
 <h1>Exercise - Absolute 1</h1>
 <div id="wrapper">
-  <div id="red">Red</div>
-  <div id="green">Green</div>
-  <div id="blue">Blue</div>
-  <div id="purple">Purple</div>
+  <div id="red" class="tile">Red</div>
+  <div id="green" class="tile">Green</div>
+  <div id="blue" class="tile">Blue</div>
+  <div id="purple" class="tile">Purple</div>
   <div id="footer">Footer</div>
 </div>
 </body>

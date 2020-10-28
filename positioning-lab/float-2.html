@@ -29,39 +29,43 @@ body {
 	width: 800px;
 	margin-right: auto;
 	margin-left: auto;
+	padding-top: 20px;
+}
+.tile {
+	width: 175px;
+	height: 175px;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 20px;
 }
 #red {
 	background-color: #900;
-	width: 175px;
-	height: 175px;
-	float: left;
-	margin: 20px 0px 20px 20px;
 }
 #green {
 	background-color: #090;
-	width: 175px;
-	height: 175px;
-	float: left;
-	margin: 20px 0px 20px 20px;
 }
 #blue {
 	background-color: #00F;
-	width: 175px;
-	height: 175px;
-	float: left;
-	margin: 20px 0px 20px 20px;
 }
 #purple {
 	background-color: #63C;
-	width: 175px;
-	height: 175px;
-	float: left;
-	margin: 20px 0px 20px 20px;
+}
+#tomato {
+	background-color: tomato;
+}
+#teal {
+	background-color: teal;
+}
+#indigo {
+	background-color: indigo;
+}
+#fuchsia {
+	background-color: fuchsia;
 }
 #footer {
 	background-color: #666;
 	clear: both;
-	margin: 0px 20px 20px 20px;
+	margin: 20px;
 }
 h1 {
 	color: #000;
@@ -74,10 +78,15 @@ h1 {
 <body>
 <h1>Exercise - Float 2</h1>
 <div id="wrapper">
-  <div id="red">Red</div>
-  <div id="green">Green</div>
-  <div id="blue">Blue</div>
-  <div id="purple">Purple</div>
+  <div id="red" class="tile">Red</div>
+  <div id="green" class="tile">Green</div>
+  <div id="blue" class="tile">Blue</div>
+  <div id="purple" class="tile">Purple</div>
+  
+  <div id="tomato" class="tile">Tomato</div>
+  <div id="teal" class="tile">Teal</div>
+  <div id="indigo" class="tile">Indigo</div>
+  <div id="fuchsia" class="tile">Fuchsia</div>
   <div id="footer">Footer</div>
 </div>
 </body>
