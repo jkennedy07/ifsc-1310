@@ -1,0 +1,349 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;    /* changes behavior of box model */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ------- Utility Styles --------------*/
+
+.container {
+  width: 80vw;  /* vw = "viewport width" */
+  margin: 40px auto;
+  max-width:900px;
+}
+
+.img-right {
+  float:right;
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+  margin: 10px 0 10px 20px;
+}
+
+.img-left {
+  float:left;
+  padding: 5px;
+  border 1px solid #c0c0c0;
+  margin 10px 20px 10px 0;
+}
+
+.img-center {
+  margin: auto;
+  display: block;
+}
+
+
+/* ------- Responsive Images ---------------*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* ------- Global Styles ---------------*/
+/* colors:
+#66C9FF    (light blue)
+#2175A3    (medium blue)
+#48B4F0    (alternate light blue)
+#A8865B    (tan)
+#B38F60    (tan low contrast)
+#665237    (dark tan)
+#F0A748    (cream orange)
+*/
+
+body {
+    background-color:#A8865B;
+    font-family: 'Fira Sans', sans-serif;
+    margin:0;
+}
+
+header.primary {
+    background-color:#2175A3;
+    text-align:center;
+    color:#ffffff;
+    text-shadow: 2px 2px #000;
+    
+    /* long tedious form */
+    padding-top:40px;
+    padding-bottom:20px;
+    
+    /* one-value shorthand */
+    padding: 100px;
+    
+    /* two-value shorthand */
+    padding: 20px 40px;             /* top/bottom _ left/right */
+    
+    /* four-value shorthand form */
+    padding: 40px 40px 20px 40px;   /* clockwise from top: t,r,b,l */
+}
+
+header.primary h1{
+  font-size:3.2rem;
+  margin: 20px 0;
+}
+
+header.primary h1 a{
+  text-decoration:none;
+  color:#ffffff;
+}
+
+header.primary h2{
+  font-size:2rem;
+  /* three-value shorthand  - top, l&r, bot*/
+  margin:20px auto 40px;
+}
+
+header.primary nav{
+  width:80vw;
+  margin:20px auto;
+  max-width:900px;
+}
+
+header.primary nav ul{
+  display: flex; /* treat as flexbox */
+  flex-direction: row; /* actually the default */
+  justify-content: space-around;
+  padding:0;  /* removes spacing associated with bullets */
+}
+
+header.primary nav ul li{
+  list-style-type: none;  /* removes bullets, but not spacing */
+  padding:10px;
+}
+
+header.primary nav ul li a{
+  color:#ffffff;
+  text-decoration:none;
+  background:#A8865B;
+  padding:8px 16px;
+  background:rgba(0,0,0,.4);
+  border-radius:7px;
+  transition:350ms;
+}
+
+header.primary nav ul li a:hover{
+  background:rgba(0,0,0,.7);
+}
+
+header.primary nav ul li a:active{
+  background:rgba(0,0,0,1);
+}
+
+#intro {
+  border-bottom: 2px solid #c0c0c0;  /* width, stroke type, color */
+  padding-bottom: 1.25em;
+  line-height:30px;
+}
+
+#intro h2 {
+  color:#000000;
+  font-size: 2rem;
+}
+
+/* these buttons break if we got to a narrow screen
+see the media query code at the end */
+
+#content {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  border-bottom: 2px solid #c0c0c0;  /* width, stroke type, color */
+  padding-bottom: 2.8em;
+}
+
+#content article.post {
+  width: 30%;    /* not viewport here, since we are not using the full screen */
+  box-shadow: 0 4px 8px rgba(0,0,0,.4);
+  padding: 10px;  /* could be done with ems to make more scalable */
+  transition: 350ms;  /* safest to put this on the base element, but may work on pseudoselector*/
+  border-radius: 10px;
+}
+
+#content article.post:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,.8);
+}
+
+#content .post figure {
+  margin: 0;
+}
+
+#content article time, #content article figcaption, #content article footer{
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color:#c0c0c0;
+}
+
+#content article img {
+  border-radius:5px;
+}
+
+.post a:link, .post a:visited{
+  color: #66C9FF;
+}
+
+#content h2 a:link, #content h2 a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+/*
+This is the syntax to target a web ARIA role element:
+aside[role="complementary"] {
+}
+*/
+
+aside[role="complementary"] {
+  background-color: #665237;
+  color:#ffffff;
+  padding: 2.5rem;
+}
+
+aside .container {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+aside article.widget {
+  width: 40%;
+}
+
+aside a:link, aside a:visited {
+  color: #66C9FF;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+aside article footer {
+  display: none;
+}
+
+footer a {
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  background-color: rgba(0,0,0,.8);
+  color: #66C9FF;
+  transition: 500ms;
+}
+
+footer#colophon {
+  background-color: #2175A3;
+
+}
+
+#colophon h6 {  
+  padding: 20px;
+  margin: 0;
+  color: #000000;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+#additional-elements h2 {
+  border-bottom: 3px double #c0c0c0;
+  padding: 5px;
+}
+
+#additional-elements a:link, #additional-elements a:visited {
+  color: darkblue;
+}
+
+#additional-elements h3 {
+  
+}
+
+table {
+  width: 100%;
+  border: 1px solid #c0c0c0;
+  border-collapse: collapse;
+}
+
+table caption {
+  color: #ffffff;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: #665237;
+}
+
+table tr {
+  
+}
+
+table tr:nth-child(even) {
+  background-color: #B38F60;
+  background: rgba(0,0,0,.15)
+  /* alternate color or transparency overlay to darken while 
+  keeping the same hue */
+}
+
+table td {
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+table th {
+  background-color: #2175A3;
+  width: 33%;
+}
+
+#additional-elements ol {
+  list-style-type: upper-roman;
+}
+
+#additional-elements ul ul {
+  /* targets sublist */
+  list-style-type: square;
+}
+
+#additional-elements dt {
+  font-weight:bold;
+  font-size: 1.1rem;
+}
+
+#additional-elements dd {
+  margin: 0px;
+}
+
+dd + dt {
+  margin-top: 1.4rem;
+}
+
+#additional-elements blockquote {
+  background: rgba(0,0,0,.15);
+  padding: 40px 60px;
+  border: 5px double rgba(0,0,0,.5);
+  border-radius: 16px;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+#additional-elements cite {
+  display: block;
+  font-size:.8rem;
+  text-align: right;
+  margin-top: 1.5rem;
+  font-style: normal;
+}
+
+
+
+@media screen and (max-width:680px) {
+  header.primary nav ul{
+    flex-direction: column; 
+    max-width:400px;
+    margin:0 auto;
+  }
+  
+  header.primary nav a{
+    display:block;
+  }
+}
