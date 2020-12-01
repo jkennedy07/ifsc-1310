@@ -314,9 +314,13 @@ footer a {
   margin:10px 0px;
 }
 
+footer li {
+  margin:10px 0px;
+  list-style-type:none;
+}
+
 footer a:hover {
   background-color: rgba(0,0,0,.8);
-  color: #66C9FF;
   transition: 500ms;
 }
 
