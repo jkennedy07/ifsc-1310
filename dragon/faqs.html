@@ -10,12 +10,18 @@
   <meta name="company" content="SpaceX" />
   <meta name="founder" content="Elon Musk" />  
   <meta name="client" content="SpaceX" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Exo+2&family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
+<header role="banner" class="primary">
+  <h1 class="logo-replace">SpaceX - Dragon</h1>
+</header>
 
+<img src="assets/img/dragoncrew.8k.jpg" alt="Dragon in space" class="img-center">
+<main class="container">
 <h1>Frequently Asked Questions</h1>
 
 <p class="question">Could SpaceX send a Dragon to the Moon?</p>
@@ -62,8 +68,9 @@
 <p class="answer">First: the deorbit phase starts. The Dragon coasts away from the station to prevent damage to the station from its thrusters. Once it has reached a safe distance, it fires its Draco thrusters, each capable of 400 newtons of thrust, in a sequence to ensure the Dragon enters the atmosphere at the correct angle to reenter safely with the least stress on the PICA heat shield. This deorbit burn takes seven minutes to execute.</p>
 <p class="answer">Second: the reentry phase begins. The Dragon's trunk is jettisoned; it's not designed to withstand the heat and forces of reentry and so burns up and is destroyed in the upper atmosphere. The Dragon then orients itself to point its heatshield forwards, but at a slight angle; since the Dragon is loaded asymmetrically prior to its release from the ISS, the capsule can be rotated along its axis, acting like a weak wing, to adjust its trajectory and fine-tune its landing position.</p>
 <p class="answer">Third: the landing phase begins. When the Dragon reaches an altitude of 13.7 km, two small parachutes called "drogue chutes" are deployed. These slow down the Dragon capsule and ensure full deployment of the three main parachutes. After the three main parachutes deployed, they slow the Dragon to about 5 m/s at sea level for splashdown. Much like the Apollo capsule, the Dragon is able to land with two parachutes in the event of an anomaly with a third parachute.</p>
+</main>
 
-<nav role="navigation">
+<nav role="navigation" class="container">
   <ul>
     <li><a href="index.html">SpaceX Dragon Homepage</a></li>
     <li><a href="history.html">SpaceX Dragon History</a></li>
@@ -71,9 +78,12 @@
   </ul>
 </nav>
 
-<footer id="colophon" role="contentinfo">
-<a href="../index.html" title="Homepage">Home</a> 
-<h6>&copy; 2020 Jason Kennedy</h6>
+<img src="assets/img/Dragon_2_hover_test.jpg" alt="Dragon in space" class="img-center">
+
+<footer id="colophon" role="contentinfo" class="container">
+  <h6 id="copyright">&copy; 2020 Jason Kennedy</h6>
+  <p class="disclaimer">This website was created as a school project. Anything on here that is copyrighted or trademarked is the property of its owner. This is, obviously, not an official SpaceX website.</p>
+  <a href="http://spacex.com">Official SpaceX Website</a>
 </footer>
 </body>
 </html>

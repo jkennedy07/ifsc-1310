@@ -11,22 +11,25 @@
   <meta name="company" content="SpaceX" />
   <meta name="founder" content="Elon Musk" /> 
   <meta name="client" content="SpaceX" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Exo+2&family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-<h1>SpaceX - Dragon</h1>
+<header role="banner" class="primary">
+  <h1 class="logo-replace">SpaceX - Dragon</h1>
+</header>
 
-<img src="assets/img/dragon-in-space.jpg" alt="Dragon in space">
-
-<h2>Dragon Vehicle Overview:</h2>
+<img src="assets/img/dragon-in-space.jpg" alt="Dragon in space" class="img-center">
+<main class="container">
+<h2>Dragon Vehicle Overview</h2>
 
 <p>Dragon is a free-flying spacecraft designed to deliver both cargo and people to orbiting destinations. Dragon made history in 2012 when it became the first commercial spacecraft in history to deliver cargo to the International Space Station and safely return cargo to Earth, a feat previously achieved only by governments.</p>
 
 <p>It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth. Currently Dragon carries cargo to space, but it was designed from the beginning to carry humans. Under an agreement with NASA, SpaceX is now developing the refinements that will enable Dragon to fly crew. Dragon's first manned test flight is expected to take place as early as 2018.</p>
 
-<h2>Configurations:</h2>
+<h2>Configurations</h2>
 
 <h4>Cargo - Resupply the Space Station</h4>
 <dl>  
@@ -46,7 +49,7 @@
   <dd>Upgrades to Dragon are currently in progress. Dragon’s first manned test flight is expected to take place as early as 2018.</dd>
 </dl>
 
-<h4>Dragon Lab - A FREE-FLYING MICROGRAVITY LABORATORY</h4>
+<h4>Dragon Lab - A Free-Flying Microgravity Laboratory</h4>
 <dl>
   <dt>FACILITATING RESEARCH</dt>
   <dd>DragonLab is a free-flying, unmanned platform designed for research and testing in a microgravity environment independent of the International Space Station.</dd>
@@ -55,8 +58,9 @@
   <dt>CAPABILITIES</dt>
   <dd>DragonLab can readily accommodate instrument and sensor testing, space physics and relativity experiments, radiation effects research, and many other microgravity tests.</dd>
 </dl>
+</main>
 
-<nav role="navigation">
+<nav role="navigation" class="container">
   <ul>
     <li><a href="index.html">SpaceX Dragon Homepage</a></li>
     <li><a href="history.html">SpaceX Dragon History</a></li>
@@ -64,9 +68,12 @@
   </ul>
 </nav>
 
-  <footer id="colophon" role="contentinfo">
-    <a href="../index.html" title="Homepage">Home</a> 
-    <h6>&copy; 2020 Jason Kennedy</h6>
+<img src="assets/img/crewdragon_iss_graphic.jpg" alt="Dragon in space" class="img-center">
+
+  <footer id="colophon" role="contentinfo" class="container">
+    <h6 id="copyright">&copy; 2020 Jason Kennedy</h6>
+    <p class="disclaimer">This website was created as a school project. Anything on here that is copyrighted or trademarked is the property of its owner. This is, obviously, not an official SpaceX website.</p>
+    <a href="http://spacex.com">Official SpaceX Website</a>
   </footer>
 </body>
 </html>

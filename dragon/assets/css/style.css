@@ -27,8 +27,8 @@ html {
 .img-left {
   float:left;
   padding: 5px;
-  border 1px solid #c0c0c0;
-  margin 10px 20px 10px 0;
+  border: 1px solid #c0c0c0;
+  margin: 10px 20px 10px 0;
 }
 
 .img-center {
@@ -36,14 +36,11 @@ html {
   display: block;
 }
 
-
 /* ------- Responsive Images ---------------*/
 img {
   max-width: 100%;
   height: auto;
 }
-
-
 
 /* ------- Global Styles ---------------*/
 /* colors:
@@ -56,8 +53,9 @@ img {
 #696969    (css DimGrey)
 #c0c0c0    (css Silver)
 #f5f5f5    (css WhiteSmoke)
-
 */
+
+/* { border: 1px solid blue; } /**/
 
 body {
     background-color:#000;
@@ -67,28 +65,25 @@ body {
 }
 
 header.primary {
-    background-color:#2175A3;
+    background-color:#000;
     text-align:center;
-    color:#ffffff;
-    text-shadow: 2px 2px #000;
-    
-    /* long tedious form */
-    padding-top:40px;
-    padding-bottom:20px;
-    
-    /* one-value shorthand */
-    padding: 100px;
-    
-    /* two-value shorthand */
-    padding: 20px 40px;             /* top/bottom _ left/right */
-    
-    /* four-value shorthand form */
-    padding: 40px 40px 20px 40px;   /* clockwise from top: t,r,b,l */
+    color:#f5f5f5;
+    padding: 40px 0px 40px;   /* clockwise from top: t,r,b,l */
 }
 
 header.primary h1{
   font-size:3.2rem;
-  margin: 20px 0;
+  margin: auto;
+}
+
+.logo-replace {
+  background-color:#ffffff;
+  width:640px;
+  height:119px;
+  background-image: url("../img/spacex-logo-blackSmall.png");
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 header.primary h1 a{
@@ -227,9 +222,96 @@ aside article footer {
   display: none;
 }
 
+main p {
+  margin: 15px;
+  font-family:Lato;
+}
+
+main h4, h2, h1 {
+  text-align:center;
+  font-family:"Exo 2";
+}
+
+main h1 {
+  font-size:2.4rem;
+}
+
+main h2 {
+  font-size:2rem;
+  background-color:#273273;
+  padding:20px;
+}
+
+main h4 {
+  font-size:1.6rem;
+  background-color:#a9a9a9;
+  background-image: url("../img/banner-space-picture.jpg");
+  background-size:cover;
+  color:#FFF;
+  padding:20px;
+  text-shadow: 3px 3px #000;
+  margin:0px auto;
+}
+
+main dt, dd {
+  font-family:"Exo 2";
+}
+
+main dt {
+  margin:10px;
+  font-style:italic;
+  font-size:1.2rem;
+  background-color:#273273;
+  width:40%;
+  color:#fff;
+  padding:5px;
+}
+
+main dd + dt {
+  margin-top: 1.4rem;
+}
+
+main .question {
+  font-size:1.2rem;
+  background-color:#273273;
+  width:60%;
+  color:#fff;
+  padding:10px;
+}
+
+main .answer {
+  font-size:1rem;
+  font-family:Lato;
+}
+
+nav {
+  background-image: url("../img/space-background.jpg");
+  background-size:cover;
+  text-align:center;
+  padding:10px 0px;
+  font-family:"Exo 2";
+}
+
+nav a {
+  text-decoration:none;
+  font-size:1.2rem;
+  color:#fff;
+  text-shadow: 1px 1px #000;
+}
+
+nav li {
+  list-style-type:none;
+  background:#273273;
+  width: 60%;
+  margin: 10px auto;
+}
+
 footer a {
   font-size: 1.1rem;
   text-decoration: none;
+  color:#FFF;
+  text-shadow: 1px 1px #000;
+  margin:10px 0px;
 }
 
 footer a:hover {
@@ -239,16 +321,30 @@ footer a:hover {
 }
 
 footer#colophon {
+  padding:10px;
   background-color:#a9a9a9;
-
+  background-image: url("../img/banner-space-picture.jpg");
+  background-size:cover;
 }
 
-#colophon h6 {  
+h6#copyright {
+  font-size:0.8rem;
+  margin:10px 0px;
+}
+
+/*#colophon h6 {  
   padding: 20px;
   margin: 0;
   color: #000000;
   font-size: .8rem;
   text-transform: uppercase;
+} */
+
+.disclaimer {
+  font-style:italic;
+  font-size:0.8rem;
+  color:#FFF;
+  text-shadow: 1px 1px #000;
 }
 
 #additional-elements h2 {
@@ -268,14 +364,19 @@ table {
   width: 100%;
   border: 1px solid #c0c0c0;
   border-collapse: collapse;
+  font-family:"Exo 2";
+  margin: 20px 0px;
 }
 
 table caption {
   color: #ffffff;
   padding: 10px;
   font-weight: bold;
-  font-size: 1.3rem;
-  background-color: #665237;
+  font-size: 1.6rem;
+  text-shadow: 1px 1px #000;
+  background-color:#a9a9a9;
+  background-image: url("../img/banner-space-picture.jpg");
+  background-size:cover;
 }
 
 table tr {
@@ -295,7 +396,7 @@ table td {
 }
 
 table th {
-  background-color: #2175A3;
+  background-color: #273273;
   width: 33%;
 }
 
@@ -317,10 +418,6 @@ table th {
   margin: 0px;
 }
 
-dd + dt {
-  margin-top: 1.4rem;
-}
-
 #additional-elements blockquote {
   background: rgba(0,0,0,.15);
   padding: 40px 60px;
@@ -337,8 +434,6 @@ dd + dt {
   margin-top: 1.5rem;
   font-style: normal;
 }
-
-
 
 @media screen and (max-width:680px) {
   header.primary nav ul{
