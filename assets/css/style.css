@@ -69,8 +69,6 @@ body {
     background-color:#DED3BA;
     color:#000;
     font-family: 'Playfair Display', serif;
-    width: 70%;
-    margin: auto;
 }
 
 h1 {
@@ -78,11 +76,14 @@ h1 {
     font-size:6rem;
     margin: auto;
     background-color:#CCD1DB;
+    width: 70%;
 }
 
 h3 {
     font-size:1.2rem;
     font-style:italic;
+    width:70%;
+    margin: auto;
 }
 
 li {
@@ -93,13 +94,19 @@ nav {
   background-color:#CCD1DB;
   text-align:center;
   padding: 10px;
-  margin:0px auto;
-  width:85%;
+  margin:50px auto 100px;
+  width:70%;
+}
+
+nav h4 {
+  font-style: italic;
+  font-size:2.4rem;
 }
 
 nav ul {
-    margin:0px;
+    margin:0px auto;
     padding:0px;
+    width: 80%;
 }
 
 nav li p {
@@ -107,7 +114,7 @@ nav li p {
 }
 
 nav ul ul li {
-    width: 80%;
+    width: 90%;
     margin: 10px auto;
 }
 
@@ -125,6 +132,11 @@ nav a:link, a:visited {
   padding:5px;
 }
 
+img {
+  margin:30px;
+  width:100%;
+}
+
 nav a:hover {
   background-color: rgba(0,0,0,.25);
   transition: 500ms;
@@ -132,11 +144,24 @@ nav a:hover {
 
 .joke {
     font-size:0.8rem;
+    width:30%;
+    max-width:500px;
+    min-width:300px;
+    margin: 100px auto 10px;
 }
 
-@media screen and (max-width:680px) {
-  nav {
-    flex-direction: column; 
-    max-width:400px;
-    margin:0 auto;
-  }
+footer {
+  margin: 20px auto;
+  width:50%;
+}
+
+footer a {
+  text-decoration:none;
+  color:#000;
+  padding:5px;
+}
+
+footer a:hover {
+  background-color: rgba(0,0,0,.25);
+  transition: 500ms;
+}
