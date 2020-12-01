@@ -78,9 +78,9 @@ header.primary h1{
 
 .logo-replace {
   background-color:#ffffff;
-  width:640px;
-  height:119px;
-  background-image: url("../img/spacex-logo-blackSmall.png");
+  background-image: url("../img/spacex-logo-small.png");
+  width:600px;
+  height:74px;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
