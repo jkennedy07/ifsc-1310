@@ -8,7 +8,7 @@
   <meta name="description" content="Jason Kennedy - IFSC 1310 Portfolio" />
   <meta name="author" content="Jason Kennedy" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Karla&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lusitana&family=Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
 </head>
@@ -16,12 +16,12 @@
 <body>
   
   <h1>Jason Kennedy</h1>
-  <h3>"Delivering deliverables to you, delivered."</h3>
+  <h5>"Delivering deliverables to you, delivered."</h5>
   
-  <img src="assets/img/croatiaBeach.jpg" alt="The coast of Croatia" class="img-center">
+  <img src="assets/img/croatiaBeach.jpg" alt="The coast of Croatia" class="img-center" id="top-image">
   
-  <nav>
-    <h4>First Class Deliverables:</h4>
+  <nav class="container" id="main-nav">
+    <h2 id="nav-title">First Class Deliverables:</h2>
     <ul>
       <li><a href="https://github.com/jkennedy07">Github</a></li>
       <li><a href="gordo/index.html">Prototype HTML5 Assignment</a></li>
@@ -43,22 +43,36 @@
     
   </nav>
   
+  <h1 id="main-title" class="container">Articles & Other Things</h1>
   <main class="container">
     <article class="essay">
-    <h2>Progressive Enhancement Writing Assignment</h2>
-    <p>Happy hour honest and direct home brewing fascinates me. Open-minded the simple things in life there's no such thing as a typical Friday night having a few beers Oxford comma, snowboarding my cats no drama I'm just a regular guy medical school. Life is short I hate lists Vampire Weekend parallel parking only looking for something casual knowing the difference between their/there/they're.</p>
-    <p>Open-minded quizzo if you think we have something in common no drama. Rock climbing The Daily Show thinking about trying yoga working on my body and my mind Arrested Development, Infinite Jest using my farmshare Neutral Milk Hotel going to shows too many to list. I know I listed more than 6 things seeing as many countries as possible my smartphone whiskey happy hour grilling.</p>
+    <h2 class="article-title">Progressive Enhancement</h2>
+    <h3>What is it?</h3>
+    <p>Progressive enhancement is a principle of web design, where sites are built in layers on top of a basic piece of content that is compatible with all browsers and accessible to everyone. The core of progressive enhancement is building the content first. The name “progressive enhancement” comes from the idea that users with more advanced systems can enjoy progressively enhanced experiences as they employ more technologies (such as CSS and JavaScript) to view the page. Progressive enhancement is about putting the content first, and building optional visuals and user experiences on top of the content.</p>
+
+    <h3>Why is it important?</h3>
+    <p>One of the oldest challenges in web development is figuring out how to build sites that work on both older and newer browsers. A site built for up-to-date browsers might have serious problems on older browsers that lack support for the newest features and standards. Worst case, the site might break completely on old browsers.</p>
+    <p>Faced with this dilemma, developers had to make a choice. Many decided that new browsers would get the best experience, and that they would make sure that it would at least not break on older browsers. This follows an old engineering principle that if a system breaks, it should do so in a way that gives the user a soft landing. They call this “graceful degradation.” </p>
+    <p>It turns out that the graceful degradation approach has a lot of problems. Instead of building sites that are meant to last, it encourages using the most current technologies, while looking backwards to do some damage control. It can produce sites that do a bad job of running on older technology, while also not being future-proof. Graceful degradation proved to be the wrong approach for smartphones, which created an unexpected need for simpler websites. </p>
+    <p>The hope is that progressive enhancement will produce websites that are future-proof and accessible to everyone. </p>
+
+    <h3>Further Reading</h3>
+    <p>Wikipedia has <a href="https://en.wikipedia.org/wiki/Progressive_enhancement">a good article</a>on progressive enhancement, with some history and description.</p> 
+    <p>The British Government used progressive enhancement in building their official websites, and <a href="https://technology.blog.gov.uk/2016/09/19/why-we-use-progressive-enhancement-to-build-gov-uk/">this article has a nice writeup.</a></p>
     </article>
+    
     <article class="essay">
-    <h2>Dragon Project Revision and Reflection</h2>
-    <p>The Daily Show running shoes art school. Glass half-full no drama if you like my profile playing my guitar the simple things in life, shoot me a message watching a movie if you think we have something in common my height and shoulders fixing up my house. I value art if you think we have something in common beach days passionate about only looking for something casual I'm just a regular guy.</p>
-    <p>Training for the marathon I'm a big fan of vinyl records quizzo. On The Road outdoor activities seeing as many countries as possible fitness Game of Thrones, knowing the difference between their/there/they're joking around quizzo I love the smell of my beard. Going back to school quizzo new friends whatever topic is on NPR ethical nonmonogamy I'm a big fan of.</p>
+    <h2 class="article-title">Dragon Project Revision and Reflection</h2>
+    <p>I suggest you drop it, Mr. Data. I'll alert the crew. We finished our first sensor sweep of the neutral zone. Well, that's certainly good to know. Besides, you look good in a dress. I can't. As much as I care about you, my first duty is to the ship. Smooth as an android's bottom, eh, Data? I think you've let your personal feelings cloud your judgement. I am your worst nightmare! I'm afraid I still don't understand, sir. Our neural pathways have become accustomed to your sensory input patterns. A surprise party? Mr. Worf, I hate surprise parties. I would *never* do that to you. You're going to be an interesting companion, Mr. Data. I guess it's better to be lucky than good.</p>
+    <p>The game's not big enough unless it scares you a little. and attack the Romulans. I recommend you don't fire until you're within 40,000 kilometers. The look in your eyes, I recognize it. You used to have it for me. Your shields were failing, sir. For an android with no feelings, he sure managed to evoke them in others. Worf, It's better than music. It's jazz. Shields up! Rrrrred alert! When has justice ever been as simple as a rule book? This is not about revenge. This is about justice. Is it my imagination, or have tempers become a little frayed on the ship lately? Captain, why are we out here chasing comets? The unexpected is our normal routine. The Enterprise computer system is controlled by three primary main processor cores, cross-linked with a redundant melacortz ramistat, fourteen kiloquad interface modules. Not if I weaken first. Sorry, Data. What?</p>
     </article>
   </main>
   
+  <section id="bottom-image">
   <img src="assets/img/acropolis.jpg" alt="The Acropolis, Athens" class="img-center">
+  </section>
   
-  <p class="joke">Someone sent the Buddha a gift box tied with a ribbon. Buddha opened it to find it empty. “Aha!”, he said, “Just what I wanted. Nothing!”</p>
+  <p class="joke">Someone sent the Buddha a gift box tied with a ribbon. Buddha opened it to find it empty. “Aha!”, he said, “Just what I wanted: nothing!”</p>
   
   <footer id="colophon" role="contentinfo" class="container">
     <h6 id="copyright">&copy; 2020 Jason Kennedy</h6>

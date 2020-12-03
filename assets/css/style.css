@@ -79,7 +79,11 @@ h1 {
     width: 70%;
 }
 
-h3 {
+h2 {
+  font-size:2.4rem;
+}
+
+h5 {
     font-size:1.2rem;
     font-style:italic;
     width:70%;
@@ -90,23 +94,32 @@ li {
   list-style-type:none;
 }
 
+#top-image {
+  margin: 0px auto 100px;
+}
+
 nav {
   background-color:#CCD1DB;
   text-align:center;
   padding: 10px;
-  margin:50px auto 100px;
-  width:70%;
 }
 
-nav h4 {
+#main-nav {
+  margin: 0px auto 100px;
+}
+
+#nav-title {
   font-style: italic;
-  font-size:2.4rem;
 }
 
 nav ul {
-    margin:0px auto;
-    padding:0px;
-    width: 80%;
+  margin:0px auto 40px;
+  padding:0px;
+  width: 80%;
+}
+
+nav ul ul {
+  margin: 0px auto 0px;
 }
 
 nav li p {
@@ -132,26 +145,57 @@ nav a:link, a:visited {
   padding:5px;
 }
 
-img {
-  margin:30px;
-  width:100%;
-}
-
 nav a:hover {
   background-color: rgba(0,0,0,.25);
   transition: 500ms;
 }
 
-.joke {
-    font-size:0.8rem;
-    width:30%;
-    max-width:500px;
-    min-width:300px;
-    margin: 100px auto 10px;
+#main-title {
+  text-align:center;
+  font-size:5rem;
+  padding:20px;
+}
+
+main {
+  background-color:#CCD1DB;
+  padding: 15px;
+}
+
+.article-title {
+  margin:0px auto 24px;
+  font-size:2.8rem;
 }
 
 article {
-  margin: 100px auto 50px;
+  border: solid #FFEFCC 1px;
+  padding: 15px;
+}
+
+main article + article {
+  margin: 120px 0px 0px;
+}
+
+article p {
+  font-family:"lusitana";
+  font-size:1.1rem;
+}
+
+article h3 {
+  margin: 10px auto;
+  width:100%;
+}
+
+#bottom-image {
+  margin: 200px auto 100px;
+}
+
+.joke {
+  font-family:"lusitana";
+  font-size:0.8rem;
+  width:30%;
+  max-width:500px;
+  min-width:300px;
+  margin: 100px auto 10px;
 }
 
 footer {
