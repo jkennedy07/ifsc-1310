@@ -96,6 +96,7 @@ li {
 
 #top-image {
   margin: 0px auto 100px;
+  width:100%;
 }
 
 nav {
@@ -187,6 +188,7 @@ article h3 {
 
 #bottom-image {
   margin: 200px auto 100px;
+  width:100%;
 }
 
 .joke {
