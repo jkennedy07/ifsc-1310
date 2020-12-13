@@ -37,8 +37,8 @@
         <li><a href="positioning-lab/absolute-2.html">Absolute 2</a></li>
       </ul>
       <li><a href="dragon/index.html">SpaceX Dragon Assignment</a></li>
-      <li>Cycle Lab (Image Slideshow w/ JS)</li>
-      <li>SpaceX Dragon - Revised</li>
+      <li><a href="cycle/index.html">Cycle Lab (Image Slideshow w/ JS)</a></li>
+      <li><a href="dragon-revised/index.html">SpaceX Dragon - Revised</a></li>
     </ul>
     
   </nav>
@@ -64,8 +64,19 @@
     
     <article class="essay">
     <h2 class="article-title">Dragon Project Revision and Reflection</h2>
-    <p>I suggest you drop it, Mr. Data. I'll alert the crew. We finished our first sensor sweep of the neutral zone. Well, that's certainly good to know. Besides, you look good in a dress. I can't. As much as I care about you, my first duty is to the ship. Smooth as an android's bottom, eh, Data? I think you've let your personal feelings cloud your judgement. I am your worst nightmare! I'm afraid I still don't understand, sir. Our neural pathways have become accustomed to your sensory input patterns. A surprise party? Mr. Worf, I hate surprise parties. I would *never* do that to you. You're going to be an interesting companion, Mr. Data. I guess it's better to be lucky than good.</p>
-    <p>The game's not big enough unless it scares you a little. and attack the Romulans. I recommend you don't fire until you're within 40,000 kilometers. The look in your eyes, I recognize it. You used to have it for me. Your shields were failing, sir. For an android with no feelings, he sure managed to evoke them in others. Worf, It's better than music. It's jazz. Shields up! Rrrrred alert! When has justice ever been as simple as a rule book? This is not about revenge. This is about justice. Is it my imagination, or have tempers become a little frayed on the ship lately? Captain, why are we out here chasing comets? The unexpected is our normal routine. The Enterprise computer system is controlled by three primary main processor cores, cross-linked with a redundant melacortz ramistat, fourteen kiloquad interface modules. Not if I weaken first. Sorry, Data. What?</p>
+      <p>For the Dragon site, I implemented instructor-provided feedback in two areas. First was moving the nav element to a higher location where it would be visible to users when they first view the page. The second was improving the vertical spacing of the page. I also consulted with a friend who gave some additional ideas to improve the site.</p>
+
+      <p>For the navigation element, the first thing I did was move the nav up so that it fell below the main banner image. I also made some upgrades to its display behavior. In particular, I made it into a flexbox where the list items would display in a row on larger screens. On smaller screens, the list items will display in a column using the @media screen rule. Also, the anchor elements now display as a block, and the entire area is clickable.</p> 
+
+      <p>Next, I worked to implement <a href="https://zellwk.com/blog/why-vertical-rhythms/">vertial rhythm</a> in the overall text layout of the page. This was, per the advice, based on multiples of 24 pixels. Most bits of text and vertical spacing were changed to multiples of 24. Larger headings have a line-height of 48 pixels, and paragraph and similar text has a height of 24. The previous design had some margins set to 20 or 40 pixels, and these were mostly changed to 24 or 48. </p>
+      
+      <p>After reviewing the website with a friend, I made a few more changes. I changed the heading text sizes to be somewhat larger, which reinforces the visual hierarchy. I swapped the starfield background between the nav element and the h4 headings, which makes the h4 text more legible. The brighter background is now on the nav, and the darker starfield is now on the h4 headings. </p>
+      
+      <p>Then there are some more minor changes. For the FAQ page, the text already benefitted greatly from increasing line height, but I also slightly indented the answer text, and increased the text size on the questions. This greatly reduces the "wall of text" feel of the original. On the History page, I improved the table by fixing the column widths. I also swapped the main top logo on all pages for a dark version. Overall, these changes decompress the page and improve readability.  </p>
+      
+      <p>If I were to work on this site further, I have a few ideas. I would want to experiment with creating a more horizontal layout for large screens. Many sites nowadays are designed as a single column, because it works well on mobile, so if I went this route it would require desiging two different layouts and then making sure the site responded correctly to the viewing device. On the FAQ page, I would want to make each question into a clickable element which would hide and reveal the answer text below. Many websites use this format and it works well, making it easy to skim the questions and select what the user wants to see, because most users are not there to read every single item. </p>
+      
+      <p>I enjoyed working on this site. I found marking up the html to involve some judgment call decisions, so I would be curious to read more about style guides for html. For example, on the main page I structured the headers and related information as a dictionary list, but on the FAQ page I made everything into paragraph elements with classes for questions and answers. Both approaches work, but I suspect something like the second one is more common in practice. For the CSS, in the Dragon project I used the prototype CSS document as a template, which was helpful to get started, but for my course homepage I started from scratch with a few boilerplate items. I can see benefits to both approaches, but using a clean sheet is nice because it simplifies troubleshooting and prevents you from having a lot of unused CSS code. </p>
     </article>
   </main>
   

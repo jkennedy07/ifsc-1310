@@ -1,0 +1,96 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;    /* changes behavior of box model */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ------- Utility Styles --------------*/
+
+.container {
+  width: 80vw;  /* vw = "viewport width" */
+  margin: 40px auto;
+  max-width:900px;
+}
+
+.img-right {
+  float:right;
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+  margin: 10px 0 10px 20px;
+}
+
+.img-left {
+  float:left;
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+  margin: 10px 20px 10px 0;
+}
+
+.img-center {
+  margin: auto;
+  display: block;
+}
+
+/* ------- Responsive Images ---------------*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ------- Global Styles ---------------*/
+/* colors:
+#91866C    (tan)
+#64728F    (dark blue)
+#4A61E0    (bright blue)
+#CCD1DB    (silver)
+#DED3BA    (peach)
+#FFEFCC    (cream)
+
+
+#260C0C    (dark charcoal)
+#a9a9a9    (css DarkGrey)
+#696969    (css DimGrey)
+#c0c0c0    (css Silver)
+#f5f5f5    (css WhiteSmoke)
+
+
+font-family: 'Karla', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+/* { border: 1px solid blue; } /**/
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #000;
+}
+.gallery {
+	background-color: #CCC;
+	width: 730px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #999;
+	height: 516px;
+	overflow: hidden; /*Avoids showing all of the images momentarily while JS loads */
+	border-radius: 4px;
+}
+.gallery img {
+	margin: 15px;
+}
+
+h1 {
+  font-family: "Jetbrains mono", monospace ;
+  color:#fff;
+  text-align: center;
+  padding: 20px;
+}
